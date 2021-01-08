@@ -1,0 +1,62 @@
+{
+  "groups": [
+    {
+      "name": "oauth2.client",
+      "type": "com.zjlab.oauth2.config.OAuth2ClientProperties",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ClientProperties"
+    },
+    {
+      "name": "oauth2.server",
+      "type": "com.zjlab.oauth2.config.OAuth2ServerProperties",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ServerProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "oauth2.client.client-id",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ClientProperties"
+    },
+    {
+      "name": "oauth2.client.client-secret",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ClientProperties"
+    },
+    {
+      "name": "oauth2.client.redirect-uri",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ClientProperties"
+    },
+    {
+      "name": "oauth2.client.response-type",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ClientProperties"
+    },
+    {
+      "name": "oauth2.client.scope",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ClientProperties"
+    },
+    {
+      "name": "oauth2.server.authorize-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.check-token-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.host",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ServerProperties"
+    },
+    {
+      "name": "oauth2.server.token-url",
+      "type": "java.lang.String",
+      "sourceType": "com.zjlab.oauth2.config.OAuth2ServerProperties"
+    }
+  ],
+  "hints": []
+}

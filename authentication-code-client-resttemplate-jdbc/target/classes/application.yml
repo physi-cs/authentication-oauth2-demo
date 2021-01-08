@@ -1,0 +1,45 @@
+server:
+  port: 9001
+
+spring:
+  http:
+    converters:
+      preferred-json-mapper: jackson
+  thymeleaf:
+    cache: false
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/oauth2_client_db?serverTimezone=Asia/Shanghai&useSSL=false&useCharacterEncoding=utf-8
+    username: root
+    password: root
+    type: com.alibaba.druid.pool.DruidDataSource
+  jpa:
+    properties:
+      hibernate:
+        hbm2ddl.auto: update
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+    show-sql: true
+
+oauth2:
+  #  client:
+  #    client-id: client-a
+  #    client-secret: client-a-secret
+  #    redirect_uri: http://localhost:${server.port}/callback
+  #    response_type: code
+  #    scope: read_user_info
+  #  server:
+  #    host: http://localhost:8080
+  #    authorize-url: ${oauth2.server.host}/oauth/authorize
+  #    token-url: ${oauth2.server.host}/oauth/token
+  #    check-token-url: ${oauth2.server.host}/oauth/check_token
+  client:
+    client-id: a4fe5396-0aff-40fd-99ac-48115f6f0297
+    client-secret: XgsBMzAxMDIwMjAxMzUwNTg2OTM2IA
+    redirect_uri: http://localhost:${server.port}/callback
+    response_type: code
+    scope: all
+  server:
+    host: https://onekey-test.zhejianglab.com/maxkey
+    authorize-url: ${oauth2.server.host}/oauth/v20/authorize
+    token-url: ${oauth2.server.host}/oauth/v20/token
+    check-token-url: ${oauth2.server.host}/oauth/v20/check_token
